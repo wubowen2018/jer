@@ -1,0 +1,29 @@
+{
+    "//": "这个json文件是用来配置服务器列表和用户密码的",
+    "devServerList": [{
+        "host": "ip",
+        "username": "nginx",
+        "password": "password",
+        "port": 22,
+        "htmlPath": "/home/nginx/ngnx/html"
+
+    }],
+    "tstServerList": [
+        {
+            "host": "ip",
+            "username": "nginx",
+            "password": "password",
+            "port": 22,
+            "htmlPath": "/home/nginx/ngnx/html"
+        }
+    ],
+    "veriServerList": [
+        {
+            "host": "ip",
+            "username": "nginx",
+            "password": "password",
+            "port": 22,
+            "htmlPath": "/home/nginx/ngnx/html"
+        }
+    ]
+}
