@@ -8,6 +8,9 @@ import 'element-ui/lib/theme-chalk/index.css'
 import './assets/styles/global.scss'
 import axios from 'axios'
 
+import './mock'
+
+
 
 Vue.prototype.$axios = axios
 

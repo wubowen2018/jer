@@ -4,7 +4,7 @@
       v-for="(item,index) in studentList"
       :key="index"
     >
-      {{ item.name }}
+      {{ item.name }}  -- {{ item.score }}
     </div>
   </div>
 </template>
