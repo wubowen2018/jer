@@ -1,25 +1,37 @@
 <template>
   <div class="home">
-    <h1>AA计算器</h1>
-    <span>测试字体</span>
+    <div class="student"
+      v-for="(item,index) in studentList"
+      :key="index"
+    >
+      {{ item.name }}
+    </div>
   </div>
 </template>
 
 <script>
 
+import request from '@/utils/request'
 export default {
   name: 'Home',
   components: {},
   data(){
     return {
-
+      studentList:[]
     }
   },
-  computed(){
+  computed: {
 
   },
   created(){
-
+    request.get('/students')
+    .then(res=>{
+      this.studentList = res.data
+      console.log(this.studentList);
+    })
+    .catch(err=>{
+      console.log(err);
+    })
   },
 
 
