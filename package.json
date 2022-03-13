@@ -3,11 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
     "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build",
     "deploy:dev": "node deploy.js dev",
-    "deploy:tst": "node deploy.js tst",
-    "build": "vue-cli-service build"
+    "deploy:tst": "node deploy.js tst"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -16,7 +15,8 @@
     "lib-flexible": "^0.3.2",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
-    "vuex": "^3.4.0"
+    "vuex": "^3.4.0",
+    "webpack": "^5.70.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -24,11 +24,13 @@
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "chalk": "^4.1.2",
-    "less": "^3.0.4",
-    "less-loader": "^5.0.0",
+    "module": "^1.2.5",
+    "node-sass": "^6.0.1",
     "node-ssh": "^12.0.2",
     "postcss-px2rem": "^0.3.0",
     "px2rem-loader": "^0.1.9",
+    "sass-loader": "7.0.3",
+    "scss": "^0.2.4",
     "vue-template-compiler": "^2.6.11"
   }
 }

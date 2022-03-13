@@ -5,11 +5,17 @@ import store from './store'
 import 'lib-flexible'
 import ElementUi from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css' 
-import './assets/styles/global.less'
+import './assets/styles/global.scss'
 import axios from 'axios'
+
+
+Vue.prototype.$axios = axios
 
 Vue.use(ElementUi)
 Vue.config.productionTip = false
+
+
+
 
 new Vue({
   router,
