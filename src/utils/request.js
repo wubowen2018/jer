@@ -21,6 +21,9 @@ instance.interceptors.response.use(res=>{
     //请求成功对响应数据做处理
 
     let data = res.data
+    if (data && data.accessToken) {
+        localStorage.setItem('token',data.accessToken)
+    }
     console.log("响应-->"+JSON.stringify(data));
     return data //该返回对象会传到请求方法的响应对象中
 },err=>{
