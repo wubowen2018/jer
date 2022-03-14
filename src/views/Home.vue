@@ -12,6 +12,8 @@
 <script>
 
 import request from '@/utils/request'
+import {getServerList} from '@/api/demo'
+
 export default {
   name: 'Home',
   components: {},
@@ -31,6 +33,10 @@ export default {
     })
     .catch(err=>{
       console.log(err);
+    })
+    getServerList()
+    .then(res=>{
+      console.log(res);
     })
   },
 

@@ -8,7 +8,7 @@ let instance = axios.create({
 instance.interceptors.request.use(config=>{
     let url = config.url
     let data = config.data
-    console.log("url-->" + url + ", data->" + data);
+    console.log("url-->" + url + ", data->" + JSON.stringify(data));
     if(url !== "get_token"){
         let token = localStorage.getItem("token")
         config.headers["x-access-token"] = token
