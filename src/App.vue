@@ -4,19 +4,22 @@
   </div>
 </template>
 <script>
-  import request from '@/utils/request'
+  import {query,getUsers} from '@/api/mockApi'
   export default {
     mounted(){
-      request({
-        url: '/parameter/query',
-        method: 'get'
-      })
-      .then((res) => {
-        console.log(re);
+      query()
+      .then(res => {
+        console.log(res);
       })
       .catch((err) => {
         
       });
+
+      getUsers()
+      .then(res=>{
+        
+      })
+
       
 
     }
