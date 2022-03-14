@@ -4,8 +4,23 @@
   </div>
 </template>
 <script>
+  import request from '@/utils/request'
   export default {
-    
+    mounted(){
+      request({
+        url: '/parameter/query',
+        method: 'get'
+      })
+      .then((res) => {
+        console.log(re);
+      })
+      .catch((err) => {
+        
+      });
+      
+
+    }
+
   }
   /**改变font-size 做适配*/
   // document.addEventListener('DOMContentLoaded', ()=>{
@@ -14,6 +29,7 @@
   //   fontSize = fontSize > 50 ? 50 : fontSize
   //   html.style.fontSize = fontSize + 'px'
   // })
+
 
 </script>
 <style lang="less">

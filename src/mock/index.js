@@ -13,6 +13,7 @@ const files = require.context('.', true, /\.js$/);
 files.keys().forEach((key) => {
     if (key === './index.js') return;
     configArray = configArray.concat(files(key).default);
+    console.log(configArray);
 });
 
 // 注册所有的mock服务
