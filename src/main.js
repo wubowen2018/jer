@@ -14,7 +14,7 @@ import './mock'
 Vue.prototype.$axios = axios
 
 // Element 全局配置 
-Vue.use(ElementUi, { size: 'small', zIndex: 3000 });
+Vue.use(ElementUi);
 
 Vue.config.productionTip = false
 

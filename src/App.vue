@@ -5,6 +5,7 @@
 </template>
 <script>
   import {query,getUsers} from '@/api/mockApi'
+  
   export default {
     mounted(){
       query()
