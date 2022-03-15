@@ -4,8 +4,26 @@
   </div>
 </template>
 <script>
+  import {query,getUsers} from '@/api/mockApi'
   export default {
-    
+    mounted(){
+      query()
+      .then(res => {
+        console.log(res);
+      })
+      .catch((err) => {
+        
+      });
+
+      getUsers()
+      .then(res=>{
+        
+      })
+
+      
+
+    }
+
   }
   /**改变font-size 做适配*/
   // document.addEventListener('DOMContentLoaded', ()=>{
@@ -14,6 +32,7 @@
   //   fontSize = fontSize > 50 ? 50 : fontSize
   //   html.style.fontSize = fontSize + 'px'
   // })
+
 
 </script>
 <style lang="less">
