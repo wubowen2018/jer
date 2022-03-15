@@ -6,6 +6,7 @@
     >
       {{ item.name }}  -- {{ item.score }}
     </div>
+    <el-button @click="show = !show">Click Me</el-button>
   </div>
 </template>
 
@@ -19,7 +20,8 @@ export default {
   components: {},
   data(){
     return {
-      studentList:[]
+      studentList:[],
+      show: true
     }
   },
   computed: {
